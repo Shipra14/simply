@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the simply theme.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function simply_preprocess_page(&$variables) {
+  $variables['page']['content']['attributes']['class'][] = 'column';
+  $variables['page']['content']['attributes']['class'][] = 'layout-content';
+  if (!empty($variables['page']['sidebar'])) {
+    $variables['page']['content']['attributes']['class'][] = 'two-thirds';
+  }
+}
