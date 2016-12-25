@@ -1,0 +1,15 @@
+name: Simply
+type: theme
+base theme: classy
+description: "A simple theme designed for a developer's personal blog."
+core: 8.x
+screenshot: screenshot.png
+libraries:
+  - simply/global-assets
+regions:
+  header: Header
+  header_right: Right Header
+  highlighted: Highlighted
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
