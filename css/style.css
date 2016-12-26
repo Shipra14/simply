@@ -64,10 +64,19 @@ a {
 a:active, a:hover {
     outline-width: 0;
 }
+.region-content h2 a,
+.region-content h3 a {
+    color: #000000;
+}
+.region-content a:hover,
+.region-content a:active {
+    text-decoration: underline;
+}
 .region-sidebar a:hover,
 .region-sidebar a:active {
     text-decoration: underline;
 }
+
 ul.menu {
     line-height: initial;
 }
