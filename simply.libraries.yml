@@ -1,4 +1,5 @@
 global-assets:
+  version: 1.x
   css:
     theme:
       css/style.css: {}
@@ -9,3 +10,19 @@ global-assets:
     - core/modernizr
     - core/drupal
     - core/drupalSettings
+    - simply/jquery.ui
+
+
+jquery.ui:
+  remote: https://github.com/jquery/jquery-ui
+  version: &jquery_ui_version 1.12.1
+  license: &jquery_ui_license
+    name: Public Domain
+    url: https://github.com/jquery/jquery-ui/blob/1.12.1/LICENSE.txt
+    gpl-compatible: true
+  js:
+    https://code.jquery.com/ui/1.12.1/jquery-ui.min.js: { weight: -11, minified: true }
+  css:
+    https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css : {}
+  dependencies:
+    - core/jquery
