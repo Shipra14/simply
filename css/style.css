@@ -281,7 +281,22 @@ footer {
   color: #767676;
   border-top: 1px solid #eee;
   text-align: center;
+  overflow: hidden;
 }
+.region-footer ul.menu {
+  margin: 0;
+}
+.region-footer .menu-item {
+  padding: 8px 0;
+}
+.region-footer .menu-item a {
+  border-right: 1px solid #8a8a8a;
+  padding: 0 8px;
+}
+.region-footer .menu-item:last-child a {
+  border-right: none;
+}
+
 /* Title */
 div.block-page-title-block {
   text-align: center;
@@ -563,7 +578,7 @@ header #search-block-form #text-field-container {
   }
   .region-footer {
     margin: 0;
-    padding: 20px;
+    padding: 20px 10px;
   }
   div.region-highlighted {
     padding: 0;
